@@ -1,0 +1,24 @@
+REMOTE SERVER
+_____________
+
+mkdir GITSEVER
+mkdir -p /student1/project-1.git
+cd project-1.git/
+git init --bare
+
+@@@@@@@@@@@@
+
+CLIENT 
+_________
+
+
+git clone ssh://root@10.127.91.42/root/GITSEVER/student1/project-1.git
+
+cd project-1 ->> cd into project
+vi ravi.txt ->> add files
+git add .
+git commit -m "v2" ->> commit
+git push origin master ->> update remote
+
+git pull -- > to updte local repo from changes in remote
+
